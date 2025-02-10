@@ -1,0 +1,149 @@
+.loadingContainer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.15);
+  border: 1px solid #c8e6c9;
+  width: 500px;
+  max-width: 100%;
+  min-height: 400px; /* Match the height of your analysis component */
+}
+
+.loadingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.logoContainer {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.eco {
+  color: #2ecc71;
+}
+
+.mart {
+  color: #27ae60;
+}
+
+.leaf {
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  animation: floatLeaf 2s ease-in-out infinite;
+}
+
+.spinnerContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.spinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.spinnerRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: #2ecc71;
+  animation: spin 1.5s linear infinite;
+}
+
+.spinnerRing:nth-child(2) {
+  border-top-color: #27ae60;
+  animation-delay: 0.5s;
+}
+
+.spinnerRing:nth-child(3) {
+  border-top-color: #228b22;
+  animation-delay: 1s;
+}
+
+.spinnerRing:nth-child(4) {
+  border-top-color: #196619;
+  animation-delay: 1.5s;
+}
+
+.loadingText {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 1.1rem;
+  min-height: 1.5em;
+}
+
+.dots::after {
+  content: '...';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+.progressBar {
+  width: 80%;
+  height: 6px;
+  background: rgba(46, 204, 113, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  animation: progress 2s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes floatLeaf {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+} 

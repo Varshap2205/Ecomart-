@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Eco-Mart",
+  "short_name": "N-C-S",
+  "version": "0.0.1",
+  "description": "Eco-Mart is a Chrome extension designed to help consumers make eco-friendly shopping choices by providing real-time sustainability insights. When users click on a product, the extension displays its environmental impact, including carbon footprint, water usage, and sustainability score, and offers eco-friendly alternatives from registered sustainable brands.",
+  "icons": {
+    "16": "/icons/icon16.png",
+    "32": "/icons/icon32.png",
+    "48": "/icons/icon48.png",
+    "192": "/icons/icon192.png"
+  },
+  "permissions": ["activeTab", "tabs", "scripting","storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

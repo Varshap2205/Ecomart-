@@ -1,0 +1,90 @@
+.unsupportedSite {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.messageCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.15);
+  border: 1px solid #c8e6c9;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  animation: bounce 2s infinite;
+}
+
+.messageCard h2 {
+  color: #2e7d32;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.messageCard p {
+  color: #558b2f;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mission {
+  background: #f1f8e9;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #c8e6c9;
+}
+
+.messageCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  color: #689f38;
+}
+
+.messageCard li {
+  margin: 8px 0;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.messageCard li:hover {
+  color: #2e7d32;
+  transform: translateX(5px);
+}
+
+.suggestion {
+  font-style: italic;
+  color: #7cb342;
+  background: #f9fbe7;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.leaf {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 64px;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+} 

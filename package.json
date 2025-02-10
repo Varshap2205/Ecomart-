@@ -1,5 +1,6 @@
 {
   "name": "ecomart",
+<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,5 +21,29 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17"
+=======
+  "version": "0.0.1",
+  "description": "EcoMart Chrome Extension",
+  "main": "popup.js",
+  "scripts": {
+    "build": "npm run prep",
+    "prep": "npm run exp && node out.js",
+    "exp": "next build && next export",
+    "run": "next start",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/app": "^0.10.18",
+    "@firebase/firestore": "^4.7.6",
+    "firebase": "^11.2.0",
+    "glob": "^10.2.3",
+    "next": "^13.4.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+>>>>>>> 5d72717e3000fc635e562ffe29724a14833b3595
   }
 }

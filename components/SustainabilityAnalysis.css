@@ -1,0 +1,43 @@
+.analysis-results {
+    margin: 12px;
+}
+
+.analysis-results h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.analysis-results h3 {
+    font-size: 1.25rem;
+    font-weight: semi-bold;
+}
+
+.analysis-results .parameter {
+    margin-bottom: 1rem;
+}
+
+.analysis-results .progress-bar {
+    width: 100%;
+    background-color: #e2e8f0; /* Gray background */
+    border-radius: 0.25rem;
+    height: 1rem;
+}
+
+.analysis-results .progress {
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.analysis-results .score {
+    margin-left: 0.5rem;
+    font-weight: normal;
+    color: #4a5568; /* Gray text */
+}
+
+.analysis-results .overall-score {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38a169; /* Green color */
+}
