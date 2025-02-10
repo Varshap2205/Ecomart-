@@ -6,6 +6,10 @@ import Link from 'next/link';
 export default function SubmissionSuccess() {
   const router = useRouter();
 
+<<<<<<< HEAD
+=======
+  // Optional: Auto-redirect after 5 seconds
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('/');
@@ -17,6 +21,10 @@ export default function SubmissionSuccess() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full p-8 bg-white shadow-lg rounded-lg text-center">
+<<<<<<< HEAD
+=======
+        {/* Success Icon */}
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
         <div className="mx-auto h-24 w-24 flex items-center justify-center rounded-full bg-green-100 mb-8">
           <svg
             className="h-16 w-16 text-green-600"
@@ -33,6 +41,10 @@ export default function SubmissionSuccess() {
           </svg>
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Success Message */}
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Successfully Submitted!
         </h2>
@@ -40,10 +52,18 @@ export default function SubmissionSuccess() {
           Your product has been registered successfully. Our team will review your submission.
         </p>
 
+<<<<<<< HEAD
+=======
+        {/* Status Message */}
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
         <p className="text-sm text-gray-500 mb-8">
           You will be redirected to the home page in 5 seconds...
         </p>
 
+<<<<<<< HEAD
+=======
+        {/* Navigation Buttons */}
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"

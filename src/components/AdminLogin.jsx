@@ -11,6 +11,10 @@ export default function AdminLogin() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username === 'admin' && password === 'admin123') {
+<<<<<<< HEAD
+=======
+      // Set authentication flag
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
       localStorage.setItem('isAdminAuthenticated', 'true');
       router.push('/admin');
     } else {
@@ -22,6 +26,10 @@ export default function AdminLogin() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-green-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-2xl">
         <div>
+<<<<<<< HEAD
+=======
+          {/* Optional: Add a logo or icon here */}
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
           <div className="flex justify-center">
             <div className="bg-green-100 rounded-full p-3">
               <svg 

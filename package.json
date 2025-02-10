@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,4 +22,31 @@
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17"
   }
+=======
+    "lint": "next lint",
+    "prep": "npm run exp && node out.js",
+    "exp": "next build && next export",
+    "run": "next start"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "firebase": "^11.2.0",
+    "@firebase/app": "^0.10.18",
+    "@firebase/firestore": "^4.7.6",
+    "glob": "^10.2.3",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.1",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
 }

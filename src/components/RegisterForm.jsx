@@ -6,11 +6,19 @@ import SubmissionSuccess from "@/components/SubmissionSuccess";
 
 export default function RegisterForm() {
   const [formData, setFormData] = useState({
+<<<<<<< HEAD
+=======
+    // Company Head Details
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
     companyName: '',
     ownerEmail: '',
     ownerName: '',
     phoneNo: '',
     
+<<<<<<< HEAD
+=======
+    // Product Details
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
     productName: '',
     category: '',
     productDescription: '',
@@ -27,6 +35,10 @@ export default function RegisterForm() {
   const [success, setSuccess] = useState(false);
   const router = useRouter();
 
+<<<<<<< HEAD
+=======
+  // Handlers
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -110,7 +122,11 @@ export default function RegisterForm() {
 
   const handleTagInputKeyDown = (e) => {
     if (e.key === 'Enter' && e.target.value.trim()) {
+<<<<<<< HEAD
       e.preventDefault();
+=======
+      e.preventDefault(); // Prevent form submission
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
       const newTag = e.target.value.trim();
       if (!formData.tags.includes(newTag)) {
         setFormData(prev => ({
@@ -118,7 +134,11 @@ export default function RegisterForm() {
           tags: [...prev.tags, newTag]
         }));
       }
+<<<<<<< HEAD
       e.target.value = '';
+=======
+      e.target.value = ''; // Clear input after adding tag
+>>>>>>> 29874944f90eba266cb612ecbc4c576d9af4f7f9
     }
   };
 
